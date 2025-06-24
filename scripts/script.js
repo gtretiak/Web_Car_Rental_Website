@@ -21,8 +21,8 @@ filterItems.forEach((item) => {
     carItems.forEach((car) => {
       // If "all brands" or car name matches filter, show it (flex display)
       if (
-        filterText == 'all brends' ||
-        // find h4 inside car, get text from it, convert to lowercase and see if it includes 'all brends'
+        filterText == 'all brands' ||
+        // find h4 inside car, get text from it, convert to lowercase and see if it includes 'all brands'
         car.querySelector('h4').textContent.toLowerCase().includes(filterText)
       ) {
         car.style.display = 'flex';
